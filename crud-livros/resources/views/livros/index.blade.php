@@ -2,6 +2,18 @@
 
 @section('content')
 
+<div class="card mb-4">
+
+        <div class="card-body">
+
+            <h5>Total de Livros</h5>
+
+            <h2>{{ $totalLivros }}</h2>
+
+        </div>
+
+    </div>
+
 @if(session('success'))
 
 <div class="alert alert-success">
@@ -58,17 +70,6 @@
     <tbody>
 
         @foreach($livros as $livro)
-        <div class="card mb-4">
-
-            <div class="card-body">
-
-                <h5>Total de Livros</h5>
-
-                <h2>{{ $totalLivros }}</h2>
-
-            </div>
-
-        </div>
 
         <tr>
 

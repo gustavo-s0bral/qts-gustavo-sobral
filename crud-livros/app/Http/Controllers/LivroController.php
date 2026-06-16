@@ -55,6 +55,8 @@ class LivroController extends Controller
             'ano' => 'required'
         ]);
 
+        Livro::create($request->all());
+        
         return redirect('/livros')
             ->with('success', 'Livro cadastrado com sucesso!');
     }
